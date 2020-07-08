@@ -24,13 +24,10 @@ class SimpleSound {
     
     private func soundURL(forName name: String) -> URL? {
         let fileExtensions = ["m4a", "wav", "mp3", "aac", "adts", "aif", "aiff", "aifc", "caf", "mp4"]
-        
         for fileExtention in fileExtensions {
-            
-            if let soundURL = Bundle.main.url(forResource: name, withExtension: fileExtention) {
+                if let soundURL = Bundle.main.url(forResource: name, withExtension: fileExtention) {
                 return soundURL
             }
-            
         }
         print("Unable to find sound file with name '\(name)'")
         return nil
