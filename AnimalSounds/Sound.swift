@@ -10,19 +10,19 @@ import AVFoundation
 import UIKit
 
 class SimpleSound {
-    var assetName: String
-    var soundData: NSDataAsset
-    var player: AVAudioPlayer
-   
+    private let player: AVAudioPlayer?
+    let name: String
+    init(name: String) {
+        self.name = name
+        guard let sound = NSDataAsset(name: name) else {
+            assertionFailure("Could not load data asset 'meow'")
+            player = nil
+            return
+        }
+        player = try? AVAudioPlayer(data: sound.data, fileTypeHint: "m4a")
+    }
+    
     func play() {
-        soundData = NSDataAsset(name: assetName)!
-        player = AVAudioPlayer(data: soundData, fileTypeHint: "m4a")
-        player.play()
+        player?.play()
     }
-    
-    init(assetName: String) {
-        self.soundData = NSDataAsset (name: assetName)?
-      self.player = player
-    }
-    
 }

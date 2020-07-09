@@ -13,7 +13,6 @@
 		B58892F324B60CB600B7653E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B58892F124B60CB600B7653E /* Main.storyboard */; };
 		B58892F524B60CBA00B7653E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B58892F424B60CBA00B7653E /* Assets.xcassets */; };
 		B58892F824B60CBA00B7653E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B58892F624B60CBA00B7653E /* LaunchScreen.storyboard */; };
-		B588930024B6120700B7653E /* SimpleSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58892FF24B6120700B7653E /* SimpleSound.swift */; };
 		B588930324B7702B00B7653E /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = B588930224B7702B00B7653E /* Sound.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +25,6 @@
 		B58892F424B60CBA00B7653E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B58892F724B60CBA00B7653E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B58892F924B60CBA00B7653E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B58892FF24B6120700B7653E /* SimpleSound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleSound.swift; sourceTree = "<group>"; };
 		B588930224B7702B00B7653E /* Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,7 +61,6 @@
 				B58892EB24B60CB600B7653E /* AppDelegate.swift */,
 				B58892ED24B60CB600B7653E /* SceneDelegate.swift */,
 				B58892EF24B60CB600B7653E /* ViewController.swift */,
-				B58892FF24B6120700B7653E /* SimpleSound.swift */,
 				B588930224B7702B00B7653E /* Sound.swift */,
 				B58892F124B60CB600B7653E /* Main.storyboard */,
 				B58892F424B60CBA00B7653E /* Assets.xcassets */,
@@ -148,7 +145,6 @@
 				B58892F024B60CB600B7653E /* ViewController.swift in Sources */,
 				B58892EC24B60CB600B7653E /* AppDelegate.swift in Sources */,
 				B58892EE24B60CB600B7653E /* SceneDelegate.swift in Sources */,
-				B588930024B6120700B7653E /* SimpleSound.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
