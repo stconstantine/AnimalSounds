@@ -15,7 +15,7 @@ class SimpleSound {
     init(name: String) {
         self.name = name
         guard let sound = NSDataAsset(name: name) else {
-            assertionFailure("Could not load data asset 'meow'")
+            assertionFailure("Could not load data asset \(name)")
             player = nil
             return
         }
@@ -23,6 +23,7 @@ class SimpleSound {
     }
     
     func play() {
+        player?.stop()
         player?.play()
     }
 }

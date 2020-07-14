@@ -14,6 +14,7 @@
 		B58892F524B60CBA00B7653E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B58892F424B60CBA00B7653E /* Assets.xcassets */; };
 		B58892F824B60CBA00B7653E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B58892F624B60CBA00B7653E /* LaunchScreen.storyboard */; };
 		B588930324B7702B00B7653E /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = B588930224B7702B00B7653E /* Sound.swift */; };
+		B588930724B7AB2500B7653E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B588930524B7AB1F00B7653E /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		B58892F724B60CBA00B7653E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B58892F924B60CBA00B7653E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B588930224B7702B00B7653E /* Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
+		B588930524B7AB1F00B7653E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B588930A24B7AD1B00B7653E /* AnimalSounds.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AnimalSounds.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B588930724B7AB2500B7653E /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +48,7 @@
 			children = (
 				B58892EA24B60CB600B7653E /* AnimalSounds */,
 				B58892E924B60CB600B7653E /* Products */,
+				B588930424B7AB1E00B7653E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +63,7 @@
 		B58892EA24B60CB600B7653E /* AnimalSounds */ = {
 			isa = PBXGroup;
 			children = (
+				B588930A24B7AD1B00B7653E /* AnimalSounds.entitlements */,
 				B58892EB24B60CB600B7653E /* AppDelegate.swift */,
 				B58892ED24B60CB600B7653E /* SceneDelegate.swift */,
 				B58892EF24B60CB600B7653E /* ViewController.swift */,
@@ -68,6 +74,14 @@
 				B58892F924B60CBA00B7653E /* Info.plist */,
 			);
 			path = AnimalSounds;
+			sourceTree = "<group>";
+		};
+		B588930424B7AB1E00B7653E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B588930524B7AB1F00B7653E /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,6 +302,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AnimalSounds/AnimalSounds.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JUZY3KJRDX;
 				INFOPLIST_FILE = AnimalSounds/Info.plist;
@@ -297,6 +312,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Starodubtsev.AnimalSounds;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -306,6 +322,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AnimalSounds/AnimalSounds.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JUZY3KJRDX;
 				INFOPLIST_FILE = AnimalSounds/Info.plist;
@@ -315,6 +332,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Starodubtsev.AnimalSounds;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

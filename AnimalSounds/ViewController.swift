@@ -9,15 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
     
     let mooSound = SimpleSound(name: "moo")
     let meowSound = SimpleSound(name: "meow")
     let woofSound = SimpleSound(name: "woof")
+    let foxSound = SimpleSound(name: "fox")
    
     @IBOutlet weak var animalSoundLabel: UILabel!
 
@@ -33,6 +29,10 @@ class ViewController: UIViewController {
     @IBAction func catButtonTapped(_ sender: UIButton) {
         animalSoundLabel.text = "Мур!"
         meowSound.play()
+    }
+    @IBAction func foxButtonTapped(_ sender: UIButton) {
+        animalSoundLabel.text = "What does the fox says?"
+        foxSound.play()
     }
 
 }
